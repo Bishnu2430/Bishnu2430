@@ -1,26 +1,76 @@
 <h1 align="center">Hi 👋, I'm Bishnu Prasad Kar</h1>
-<h3 align="center">“Aspiring Data Scientist | Making sense of data… or at least trying to | Passionate About AI, Machine Learning, and occasionally debugging my life”</h3>
+<h3 align="center">Aspiring Data Scientist 🚀 | Exploring AI & ML | Turning ideas into impactful projects</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=bishnu2430&label=Profile%20views&color=0e75b6&style=flat" alt="bishnu2430" /> </p>
+---
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=bishnu2430" alt="bishnu2430" /></a> </p>
+### 🔭 Projects Showcase  
+Here are some of the projects I’ve been working on:  
 
-- 🔭 I’m currently working on [Misinformation Vaccine](https://github.com/Bishnu2430/Misinformation-Vaccine)
+- **Misinformation Vaccine** 📰  
+  *A Fake News Detection & Article Rating Portal powered by NLP & Machine Learning.*  
+  https://github.com/Bishnu2430/Misinformation-Vaccine 
 
-- 📫 How to reach me **karbishnu2430@gmail.com**
+- **Water Quality Prediction with IoT + ML** 💧  
+  *Arduino-based system using pH, TDS & Turbidity sensors, with ML models for real-time water quality classification.*  
+  https://github.com/Bishnu2430/Smart_Product_Scanner 
 
-- ⚡ Fun fact **I think I am “Jack of many trades, master of some, apprentice to time.”**
+- **Smart Product Scanner** 📦  
+  *Streamlit app for QR/Barcode & OCR-based product scanning, multilingual OCR, and offline sync.*  
+  https://github.com/Bishnu2430/Smart_Product_Scanner 
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/bishnu-prasad-kar-600092317" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="bishnu-prasad-kar-600092317" height="30" width="40" /></a>
-<a href="https://kaggle.com/bishnuprasadkar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="bishnuprasadkar" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/TfThEd9Pja" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="bishnu prasad kar" height="30" width="40" /></a>
+- **Droplet Contact Angle Analyzer** 💧🔬  
+  *Tkinter + OpenCV app for automatic/manual droplet contour detection & hydrophobic/hydrophilic classification.*  
+  https://github.com/Bishnu2430/Contact-Angle-Project  
+
+- **Soil to Shelf** 🌿 
+  *A blockchain-based system to ensure end-to-end botanical traceability of Ayurvedic herbs, from the point of collection to the final product label*  
+  https://github.com/Bishnu2430/ayurvedic-blockchain 
+
+- **Cybersecurity Dashboard (Tableau)** 🔐  
+  *Analyzed 13,000+ cyberattacks (2014–2024) to identify threat actors, motives & geopolitical trends.*  
+- **Coffee Shop BI Dashboard (Excel)** ☕  
+  *Business intelligence dashboard analyzing $698K in sales, peak hours, and product mix for retail optimization.*  
+  https://github.com/Bishnu2430/DataAnalysis_Projects/tree/main/cttcProject  
+
+---
+
+### 🛠️ Skills & Tools  
+
+**Data Science & ML**  
+Python · TensorFlow · PyTorch · Pandas · NumPy · Scikit-learn · Seaborn · Matplotlib  
+
+**Databases**  
+MySQL · PostgreSQL · MongoDB  
+
+**Web & Dev Tools**  
+Node.js · React · Express.js · Docker · Git · HTML · CSS · JavaScript  
+
+**Other Tech**  
+Arduino · Blender · Linux · Go · Java · C · OpenCV  
+
+---
+
+### 📊 GitHub Stats  
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=bishnu2430&show_icons=true&theme=tokyonight&title_color=00ffcc&bg_color=0d1117&hide_border=true" alt="GitHub stats" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=bishnu2430&show_icons=true&theme=tokyonight&title_color=00ffcc&bg_color=0d1117&layout=compact&hide_border=true" alt="Top Languages" />
+</p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=bishnu2430&show_icons=true&theme=tokyonight&title_color=00c76a&bg_color=ffffff&locale=en&layout=compact" alt="bishnu2430" /></p>
+---
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=bishnu2430&show_icons=true&theme=tokyonight&title_color=00bfff&bg_color=ffffff&locale=en" alt="bishnu2430" /></p>
+### 🌐 Connect with Me  
+<p align="left">
+<a href="https://linkedin.com/in/bishnu-prasad-kar-600092317" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
+<a href="https://kaggle.com/bishnuprasadkar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="Kaggle" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/TfThEd9Pja" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="LeetCode" height="30" width="40" /></a>
+</p>  
+
+📫 Reach me at: **karbishnu2430@gmail.com**
+
+---
+
+✨ *“Jack of many trades, master of some, apprentice to time.”*  
