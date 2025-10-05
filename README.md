@@ -28,7 +28,7 @@ Here are some of the projects I’ve been working on:
 
 - **Cybersecurity Dashboard (Tableau)** 🔐  
   *Analyzed 13,000+ cyberattacks (2014–2024) to identify threat actors, motives & geopolitical trends.*  
-- **Coffee Shop BI Dashboard (Excel)** ☕  
+  **Coffee Shop BI Dashboard (Excel)** ☕  
   *Business intelligence dashboard analyzing $698K in sales, peak hours, and product mix for retail optimization.*  
   https://github.com/Bishnu2430/DataAnalysis_Projects/tree/main/cttcProject  
 
@@ -65,8 +65,6 @@ Arduino · Blender · Linux · Go · Java · C · OpenCV
 ### 🌐 Connect with Me  
 <p align="left">
 <a href="https://linkedin.com/in/bishnu-prasad-kar-600092317" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
-<a href="https://kaggle.com/bishnuprasadkar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="Kaggle" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/TfThEd9Pja" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="LeetCode" height="30" width="40" /></a>
 </p>  
 
 📫 Reach me at: **karbishnu2430@gmail.com**
