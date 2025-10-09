@@ -71,4 +71,4 @@ Arduino · Blender · Linux · Go · Java · C · OpenCV
 
 ---
 
-✨ *“Jack of many trades, master of some, apprentice to time.”*  
+| 🪶 “I’ve danced with many crafts and mastered some, yet in the quiet halls of time, I am ever a humble student.”
