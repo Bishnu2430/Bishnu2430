@@ -12,7 +12,7 @@ Here are some of the projects I’ve been working on:
 
 - **Water Quality Prediction with IoT + ML** 💧  
   *Arduino-based system using pH, TDS & Turbidity sensors, with ML models for real-time water quality classification.*  
-  https://github.com/Bishnu2430/Smart_Product_Scanner 
+  https://github.com/Bishnu2430/Water-Quality-Analysis-System 
 
 - **Smart Product Scanner** 📦  
   *Streamlit app for QR/Barcode & OCR-based product scanning, multilingual OCR, and offline sync.*  
