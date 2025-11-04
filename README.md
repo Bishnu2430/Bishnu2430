@@ -1,6 +1,6 @@
 <!-- Lofi Tokyo Night Banner -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Bishnu2430/Bishnu2430/main/lofi_tokyo_banner.jpg" width="100%" style="border-radius:10px;"/>
+  <img src="https://raw.githubusercontent.com/Bishnu2430/Bishnu2430/main/pic.gif" width="600"/>
 </p>
 
 <div align="center" style="background:#0a0f1b; padding:20px; border-radius:10px;">
@@ -70,7 +70,9 @@
 <a href="https://www.java.com" target="_blank" rel="noreferrer"><img title="Java" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40" height="40"/></a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img title="JavaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40"/></a>
 <a href="https://www.linux.org/" target="_blank" rel="noreferrer"><img title="Linux" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40" height="40"/></a>
-<a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"><img title="MATLAB" src="https://upload.wikimedia.org/wikipedia/en/2/21/Matlab_Logo.png" width="40" height="40"/></a>
+<a href="https://www.mathworks.com/" target="_blank" rel="noreferrer">
+  <img title="MATLAB" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" width="40" height="40"/>
+</a>
 <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img title="MongoDB" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" width="40" height="40"/></a>
 <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img title="MySQL" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40" height="40"/></a>
 <a href="https://nodejs.org" target="_blank" rel="noreferrer"><img title="Node.js" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="40" height="40"/></a>
