@@ -94,16 +94,16 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Bishnu2430&theme=tokyonight&hide_border=true" height="175"/>
+  <img src="https://github-readme-streak-stats-six-ecru.vercel.app?user=bishnu2430&theme=tokyonight&hide_border=true" height="175" alt="GitHub Streak"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bishnu2430&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0f1b" height="175"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bishnu2430&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0f1b" height="175"/>
+  <img src="https://github-readme-stats-mauve-iota-60.vercel.app/api?username=bishnu2430&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0f1b" height="175" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats-mauve-iota-60.vercel.app/api/top-langs/?username=bishnu2430&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0f1b" height="175" alt="Top Languages"/>
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=bishnu2430&theme=tokyonight&no-frame=true&margin-w=10&row=1"/>
+  <img src="https://github-profile-trophy-pi-smoky.vercel.app/?username=bishnu2430&theme=tokyonight&no-frame=true&margin-w=10&row=1" alt="GitHub Trophies"/>
 </p>
 
 ---
