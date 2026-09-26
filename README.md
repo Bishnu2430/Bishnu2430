@@ -5,7 +5,7 @@
 <p>
 <a href="https://bishnuprasadkar.vercel.app"><img src="assets/button-portfolio.svg" alt="Portfolio" height="44"></a>
 <a href="https://bishnuprasadkar.vercel.app/resume.pdf"><img src="assets/button-resume.svg" alt="Resume" height="44"></a>
-<a href="https://www.linkedin.com/in/bishnu-prasad-kar-600092317/"><img src="assets/button-linkedin.svg" alt="LinkedIn" height="44"></a>
+<a href="https://www.linkedin.com/in/bishnu-prasad-kar"><img src="assets/button-linkedin.svg" alt="LinkedIn" height="44"></a>
 <a href="mailto:karbishnu2430@gmail.com"><img src="assets/button-email.svg" alt="karbishnu2430@gmail.com" height="44"></a>
 </p>
 
@@ -18,7 +18,7 @@
 <a href="https://bishnuprasadkar.vercel.app/#work"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/head-work-dark.svg"><img src="assets/head-work-light.svg" alt="Selected work: Seven systems, each with a write-up of what worked and what didn't" width="100%"></picture></a>
 
 <p>
-<a href="https://bishnuprasadkar.vercel.app/work/q-consensus"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-q-consensus-dark.svg"><img src="assets/work-q-consensus-light.svg" alt="Q-CONSENSUS: Five AI agents debate, a quantum optimizer picks the consensus, and a blockchain keeps the receipts." width="49.8%"></picture></a><a href="https://bishnuprasadkar.vercel.app/work/qubitscope"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-qubitscope-dark.svg"><img src="assets/work-qubitscope-light.svg" alt="Qubitscope: Poke a qubit and watch it answer: an interactive quantum lab where every number comes from a real Qiskit simulation." width="49.8%"></picture></a>
+<a href="https://bishnuprasadkar.vercel.app/work/q-consensus"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-q-consensus-dark.svg"><img src="assets/work-q-consensus-light.svg" alt="Q-CONSENSUS: Five AI agents debate, a quantum optimizer picks the consensus, and a blockchain keeps the receipts." width="49.8%"></picture></a><a href="https://bishnuprasadkar.vercel.app/work/quantumlab"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-quantumlab-dark.svg"><img src="assets/work-quantumlab-light.svg" alt="QuantumLab: Poke a qubit and watch it answer: an interactive quantum lab where every number comes from a real Qiskit simulation." width="49.8%"></picture></a>
 </p>
 <p>
 <a href="https://bishnuprasadkar.vercel.app/work/misinformation-vaccine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-misinformation-vaccine-dark.svg"><img src="assets/work-misinformation-vaccine-light.svg" alt="Misinformation Vaccine: Paste a news link, get a verdict with confidence from a DistilBERT model trained on 44K articles." width="49.8%"></picture></a><a href="https://bishnuprasadkar.vercel.app/work/floodwatch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-floodwatch-dark.svg"><img src="assets/work-floodwatch-light.svg" alt="Floodwatch: An Arduino watches the water rise, a random forest scores the risk, and a local LLM explains it in plain words." width="49.8%"></picture></a>
@@ -53,7 +53,7 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/papers-dark.svg"><img src="assets/papers-light.svg" alt="Three publications (2024–2026) and awards: 1st place Model Fiesta, 3rd place ReFlow Hackathon, Quantum Computing merit certificate" width="100%"></picture>
 
 <p>
-<a href="https://bishnuprasadkar.vercel.app/certificates/nvidia-deep-learning.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-nvidia-dark.svg"><img src="assets/cert-nvidia-light.svg" alt="Deep Learning, CNNs & NLP, NVIDIA Deep Learning Institute" width="24.9%"></picture></a><a href="https://bishnuprasadkar.vercel.app/certificates/cs50-ai.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-cs50-dark.svg"><img src="assets/cert-cs50-light.svg" alt="Introduction to AI with Python, Harvard CS50" width="24.9%"></picture></a><a href="https://bishnuprasadkar.vercel.app/certificates/microsoft-genai.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-microsoft-dark.svg"><img src="assets/cert-microsoft-light.svg" alt="Career Essentials in Generative AI, Microsoft & LinkedIn Learning" width="24.9%"></picture></a><a href="https://bishnuprasadkar.vercel.app/certificates/quantum-computing.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-quantum-dark.svg"><img src="assets/cert-quantum-light.svg" alt="Quantum Computing, IIT Roorkee & C-DAC" width="24.9%"></picture></a>
+<a href="https://bishnuprasadkar.vercel.app/certificates/nvidia-deep-learning.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-nvidia-dark.svg"><img src="assets/cert-nvidia-light.svg" alt="Getting Started with Deep Learning, NVIDIA Deep Learning Institute" width="24.9%"></picture></a><a href="https://bishnuprasadkar.vercel.app/certificates/cs50-ai.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-cs50-dark.svg"><img src="assets/cert-cs50-light.svg" alt="Introduction to AI with Python, Harvard CS50" width="24.9%"></picture></a><a href="https://bishnuprasadkar.vercel.app/certificates/microsoft-genai.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-microsoft-dark.svg"><img src="assets/cert-microsoft-light.svg" alt="Career Essentials in Generative AI, Microsoft & LinkedIn Learning" width="24.9%"></picture></a><a href="https://bishnuprasadkar.vercel.app/certificates/quantum-computing.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cert-quantum-dark.svg"><img src="assets/cert-quantum-light.svg" alt="Quantum Computing, IIT Roorkee & C-DAC" width="24.9%"></picture></a>
 </p>
 
 <br>
@@ -73,6 +73,6 @@
 <p>
 <a href="https://bishnuprasadkar.vercel.app"><img src="assets/button-portfolio.svg" alt="Portfolio" height="44"></a>
 <a href="https://bishnuprasadkar.vercel.app/resume.pdf"><img src="assets/button-resume.svg" alt="Resume" height="44"></a>
-<a href="https://www.linkedin.com/in/bishnu-prasad-kar-600092317/"><img src="assets/button-linkedin.svg" alt="LinkedIn" height="44"></a>
+<a href="https://www.linkedin.com/in/bishnu-prasad-kar"><img src="assets/button-linkedin.svg" alt="LinkedIn" height="44"></a>
 <a href="mailto:karbishnu2430@gmail.com"><img src="assets/button-email.svg" alt="karbishnu2430@gmail.com" height="44"></a>
 </p>
