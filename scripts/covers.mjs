@@ -320,7 +320,150 @@ ${[0.35, 0.5, 0.42, 0.7, 0.62, 0.85, 0.78].map((v, i) => `<rect x="${404 + i * 4
 <line x1="396" y1="386" x2="724" y2="386" class="threshold anim flow"/>
 </g>`;
 
-const drawings = { consensus, bloch, verdict, flood, ledger, cycle, scanner };
+const lab = () => {
+  const rows = [70, 56, 80, 64, 72, 50, 66, 78, 60, 58];
+  const limbs = [
+    [362, 288, 30, 148, 12],
+    [398, 288, 30, 148, 12],
+    [333, 152, 18, 128, 9],
+    [439, 152, 18, 128, 9],
+    [355, 146, 80, 152, 24],
+  ];
+  const body = (cls, dx = 0) =>
+    limbs.map(([x, y, w, h, r]) => `<rect x="${x + dx}" y="${y + dx}" width="${w}" height="${h}" rx="${r}" class="${cls}"/>`).join("") +
+    `<circle cx="${395 + dx}" cy="${112 + dx}" r="24" class="${cls}"/>`;
+  return `<g>
+<text x="70" y="62" class="label">REPORT · OCR</text>
+<rect x="76" y="86" width="220" height="356" rx="8" class="shadow"/>
+<rect x="70" y="80" width="220" height="356" rx="8" class="panel"/>
+<rect x="88" y="98" width="14" height="14" class="accent"/>
+<rect x="110" y="99" width="92" height="10" class="ink-fill"/>
+<rect x="110" y="114" width="124" height="5" class="line-fill"/>
+<line x1="88" y1="132" x2="272" y2="132" class="stroke thin"/>
+${rows
+  .map((w, i) => {
+    const y = 150 + i * 28;
+    return (
+      (i === 3 ? `<rect x="80" y="${y - 8}" width="200" height="22" rx="3" class="row-hit"/>` : "") +
+      `<rect x="88" y="${y}" width="${w}" height="6" class="line-fill"/><rect x="188" y="${y}" width="26" height="6" class="${i === 3 ? "amber" : "ink-fill"}"/><rect x="230" y="${y}" width="42" height="6" class="line-fill"/>`
+    );
+  })
+  .join("")}
+<rect x="80" y="140" width="200" height="3" class="accent ocr-scan anim"/>
+<path d="M298 258H326" class="link-strong dashed anim flow"/>
+<path d="M318 248L330 258L318 268" class="link-strong"/>
+<text x="342" y="62" class="label">BODY</text>
+${body("shadow", 6)}${body("panel")}
+<ellipse cx="381" cy="182" rx="11" ry="19" class="organ"/>
+<ellipse cx="409" cy="182" rx="11" ry="19" class="organ"/>
+<ellipse cx="383" cy="221" rx="17" ry="9" class="organ"/>
+<ellipse cx="378" cy="256" rx="6" ry="9" class="organ"/>
+<ellipse cx="412" cy="256" rx="6" ry="9" class="organ"/>
+<ellipse cx="403" cy="237" rx="15" ry="5" class="amber anim organ-pulse"/>
+<path d="M419 237H470L500 136" class="leader anim flow"/>
+<rect x="506" y="86" width="250" height="104" rx="6" class="shadow"/>
+<rect x="500" y="80" width="250" height="104" rx="6" class="panel"/>
+<text x="518" y="106" class="mono-xs muted">HBA1C</text>
+<rect x="672" y="92" width="60" height="20" rx="3" class="amber"/>
+<text x="684" y="106" class="mono-xs ink-dark">HIGH</text>
+<text x="518" y="132" class="mono-sm ink">6.7 %</text>
+<rect x="518" y="146" width="214" height="10" class="panel-2"/>
+<rect x="540" y="146" width="116" height="10" class="band"/>
+<rect x="686" y="141" width="6" height="20" class="ink-fill anim slide-high"/>
+<path d="${spark(4, 518, 164, 214, 14)}" class="spark anim draw" pathLength="100"/>
+<rect x="506" y="206" width="250" height="92" rx="6" class="shadow"/>
+<rect x="500" y="200" width="250" height="92" rx="6" class="panel"/>
+<text x="518" y="226" class="mono-xs muted">EGFR</text>
+<rect x="644" y="212" width="88" height="20" rx="3" class="green"/>
+<text x="654" y="226" class="mono-xs on-navy">IN RANGE</text>
+<text x="518" y="252" class="mono-sm ink">92</text>
+<rect x="518" y="266" width="214" height="10" class="panel-2"/>
+<rect x="560" y="266" width="140" height="10" class="band"/>
+<rect x="628" y="261" width="6" height="20" class="ink-fill"/>
+<rect x="506" y="314" width="250" height="122" rx="8" class="shadow"/>
+<rect x="500" y="308" width="250" height="122" rx="8" class="navy"/>
+<text x="518" y="334" class="mono-xs on-navy-muted">EXPLANATION · EN HI OR</text>
+<rect x="518" y="350" width="206" height="8" class="navy-line anim type" ${d(0)}/>
+<rect x="518" y="366" width="180" height="8" class="navy-line anim type" ${d(1)}/>
+<rect x="518" y="382" width="132" height="8" class="navy-line anim type" ${d(2)}/>
+<rect x="656" y="378" width="10" height="16" class="amber anim blink"/>
+${["RULES ✓", "JUDGE ✓"]
+  .map(
+    (txt, i) =>
+      `<g class="anim confirm" ${d(i + 3)}><rect x="${518 + i * 96}" y="402" width="86" height="20" rx="3" class="chip-on-navy"/><text x="${528 + i * 96}" y="416" class="mono-xs on-navy">${txt}</text></g>`,
+  )
+  .join("")}
+</g>`;
+};
+
+// Worldline: a top-down solar system around the Sun at (230, 262); .orbit-spin rotates about the same point.
+const orbit = () => {
+  const sunX = 230;
+  const sunY = 262;
+  const polar = (r, deg) => [r * Math.cos((deg * Math.PI) / 180), r * Math.sin((deg * Math.PI) / 180)];
+  const planets = [
+    { r: 56, deg: 35, size: 8, dur: 2.6, tone: "frost-fill" },
+    { r: 88, deg: 200, size: 10, dur: 4.2, tone: "accent" },
+    { r: 116, deg: 300, size: 9, dur: 6.4, tone: "red" },
+  ];
+  const jupiter = { r: 190, deg: -40, size: 14 };
+  const rand = mulberry32(28331);
+  const belt = Array.from({ length: 110 }, () => polar(140 + rand() * 26, rand() * 360));
+  const trojans = [-60, 60].flatMap((offset) =>
+    Array.from({ length: 16 }, () => polar(jupiter.r + (rand() - 0.5) * 18, jupiter.deg + offset + (rand() - 0.5) * 22)),
+  );
+  const stars = Array.from({ length: 16 }, () => [482 + rand() * 256, 92 + rand() * 108]).filter(([x, y]) => Math.hypot(x - 560, y - 150) > 52);
+  const chirp = Array.from({ length: 160 }, (_, i) => {
+    const t = i / 159;
+    const amp = t < 0.86 ? 4 + 20 * t ** 3 : 24 * Math.exp(-(t - 0.86) * 28);
+    const y = 290 + amp * Math.sin(2 * Math.PI * 15 * t ** 2.4);
+    return `${i ? "L" : "M"}${(488 + t * 244).toFixed(1)} ${y.toFixed(1)}`;
+  }).join("");
+  const dot = (x, y, cls) => `<rect x="${(sunX + x - 1.5).toFixed(1)}" y="${(sunY + y - 1.5).toFixed(1)}" width="3" height="3" class="${cls}"/>`;
+  const square = (r, deg, size, cls) => {
+    const [x, y] = polar(r, deg);
+    return `<rect x="${(sunX + x - size / 2).toFixed(1)}" y="${(sunY + y - size / 2).toFixed(1)}" width="${size}" height="${size}" class="${cls}"/>`;
+  };
+  return `<g>
+<g class="anim orbit-spin" style="--dur:40s">${belt.map(([x, y]) => dot(x, y, "belt")).join("")}</g>
+${planets
+  .map((p) => `<g class="anim orbit-spin" style="--dur:${p.dur}s"><circle cx="${sunX}" cy="${sunY}" r="${p.r}" class="orbit"/>${square(p.r, p.deg, p.size, p.tone)}</g>`)
+  .join("")}
+<g class="anim orbit-spin" style="--dur:16s"><circle cx="${sunX}" cy="${sunY}" r="${jupiter.r}" class="orbit"/>${trojans.map(([x, y]) => dot(x, y, "trojan")).join("")}${square(jupiter.r, jupiter.deg, jupiter.size, "amber")}</g>
+<ellipse cx="${sunX + 9}" cy="${sunY}" rx="40" ry="33" class="mercury anim precess-orbit"/>
+<circle cx="${sunX}" cy="${sunY}" r="27" class="sun-glow anim sun-pulse"/>
+<circle cx="${sunX}" cy="${sunY}" r="16" class="amber"/>
+<text x="24" y="486" class="label">EIH GRAVITY · IAS15 · NASA JPL</text>
+<rect x="476" y="66" width="280" height="150" rx="8" class="shadow"/>
+<rect x="470" y="60" width="280" height="150" rx="8" class="navy"/>
+${stars.map(([x, y]) => `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="2" height="2" class="star"/>`).join("")}
+<text x="488" y="84" class="mono-xs on-navy-muted">RAY-TRACED · KERR</text>
+<path d="M490 150A70 13 0 0 1 630 150" class="disk-back"/>
+<circle cx="560" cy="150" r="26" class="void"/>
+<circle cx="560" cy="150" r="30" class="photon-ring anim shimmer"/>
+<path d="M526 150A34 36 0 0 1 594 150" class="disk-lensed"/>
+<path d="M490 150A70 13 0 0 0 560 163" class="disk-near anim flow"/>
+<path d="M560 163A70 13 0 0 0 630 150" class="disk-far anim flow"/>
+<text x="648" y="132" class="mono-sm on-navy">SPIN 0.9</text>
+<text x="648" y="154" class="mono-xs on-navy-muted">ISCO 2.32</text>
+<text x="648" y="174" class="mono-xs on-navy-muted">SHADOW ✓</text>
+<rect x="476" y="234" width="280" height="110" rx="8" class="shadow"/>
+<rect x="470" y="228" width="280" height="110" rx="8" class="panel"/>
+<text x="488" y="252" class="mono-xs muted">GW150914 · CHIRP</text>
+<path d="${chirp}" class="chirp anim draw" pathLength="100"/>
+<text x="488" y="330" class="mono-xs ink">→ 63.0 SOLAR MASSES</text>
+<rect x="476" y="362" width="280" height="100" rx="8" class="shadow"/>
+<rect x="470" y="356" width="280" height="100" rx="8" class="panel"/>
+${["MERCURY 42.9807″/CY", "EARTH VS JPL 0.41 KM", "65+ TESTS PASSING"]
+  .map(
+    (txt, i) =>
+      `<g class="anim confirm" ${d(i)}><rect x="488" y="${372 + i * 26}" width="12" height="12" class="green"/><text x="510" y="${383 + i * 26}" class="mono-xs ink">${txt}</text></g>`,
+  )
+  .join("")}
+</g>`;
+};
+
+const drawings = { lab, orbit, consensus, bloch, verdict, flood, ledger, cycle, scanner };
 
 // Everything below the drawing: grid background, then the art. Wrap in a <svg> or <g> by the caller.
 export const coverMarkup = (visual) =>
@@ -356,10 +499,25 @@ svg{--navy:${t.navy};--bg-sunk:${t.bgSunk};--surface:${t.surface};--surface-2:${
 .seg.red{fill:var(--red);opacity:.85}.seg.frost{fill:var(--frost);opacity:.6}.seg.amber{fill:var(--amber)}.seg.accent{fill:var(--accent);opacity:.55}
 .spark{fill:none;stroke:var(--accent);stroke-width:2.5}.bracket{fill:none;stroke:var(--accent);stroke-width:3}
 .ocr-box{fill:none;stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4}.threshold{stroke:var(--amber);stroke-width:2;stroke-dasharray:6 5}
+.row-hit{fill:var(--amber);fill-opacity:.2;stroke:var(--amber);stroke-width:1.5}.organ{fill:var(--frost);opacity:.35}
+.leader{fill:none;stroke:var(--amber);stroke-width:2;stroke-dasharray:5 5}.band{fill:var(--green);opacity:.32}
+.chip-on-navy{fill:rgba(244,246,251,.12);stroke:rgba(244,246,251,.35)}
+.orbit{fill:none;stroke:var(--line-strong);stroke-width:1.5}.frost-fill{fill:var(--frost)}.belt{fill:var(--text-faint);opacity:.6}.trojan{fill:var(--amber);opacity:.7}
+.mercury{fill:none;stroke:var(--accent);stroke-width:2;stroke-dasharray:6 5}.sun-glow{fill:var(--amber);opacity:.22}.star{fill:#f4f6fb;opacity:.5}.void{fill:#070b1c}
+.photon-ring{fill:none;stroke:#ebcb8b;stroke-width:2.5}.disk-back{fill:none;stroke:#ebcb8b;stroke-width:4;opacity:.45}.disk-lensed{fill:none;stroke:#ebcb8b;stroke-width:3;opacity:.75}
+.disk-near{fill:none;stroke:#ebcb8b;stroke-width:6;stroke-dasharray:14 4}.disk-far{fill:none;stroke:#88c0d0;stroke-width:4;opacity:.7;stroke-dasharray:14 4}
+.chirp{fill:none;stroke:var(--accent);stroke-width:2;stroke-dasharray:100}
 .anim{transform-box:fill-box;transform-origin:center;animation:var(--anim);animation-delay:calc(var(--i,0)*var(--step,140ms))}
 .flow{--anim:dash-flow 1.1s linear infinite}.march{--anim:dash-flow 2.4s linear infinite}.flicker{--anim:flicker 2.6s ease-in-out infinite}
 .blink{--anim:blink 1.1s steps(1) infinite}.mark{--anim:mark 2.4s ease-in-out infinite}
 @keyframes dash-flow{to{stroke-dashoffset:-48}}@keyframes flicker{0%,100%{opacity:.55}50%{opacity:.12}}@keyframes blink{50%{opacity:.15}}@keyframes mark{0%,100%{opacity:.28}50%{opacity:.6}}
+.ocr-scan{opacity:0;--anim:ocr-scan 2.6s ease-in-out infinite}.organ-pulse{--anim:organ-pulse 1.6s ease-in-out infinite}.slide-high{--anim:slide-high 3s var(--ease) infinite}
+@keyframes ocr-scan{0%{transform:translateY(0);opacity:0}10%,90%{opacity:1}100%{transform:translateY(276px);opacity:0}}
+@keyframes organ-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.3)}}@keyframes slide-high{0%{transform:translateX(-104px)}40%,100%{transform:translateX(0)}}
+.orbit-spin,.precess-orbit{transform-box:view-box;transform-origin:230px 262px}
+.orbit-spin{--anim:orbit-spin var(--dur,8s) linear infinite;--step:0ms}.precess-orbit{--anim:orbit-spin 9s linear infinite}
+.sun-pulse{--anim:pulse 2.4s ease-in-out infinite}.shimmer{--anim:shimmer 1.8s ease-in-out infinite}
+@keyframes orbit-spin{to{transform:rotate(-360deg)}}@keyframes shimmer{0%,100%{opacity:1}50%{opacity:.45}}
 .speak{--anim:speak 2.5s var(--ease) infinite;--step:180ms}.append{--anim:append 3.5s var(--ease) infinite}.commit{--anim:commit 3.5s var(--ease) infinite}
 .shots{transform-origin:bottom;--anim:shots .9s ease-in-out infinite alternate;--step:90ms}
 @keyframes speak{0%,30%,100%{transform:none}12%{transform:translateY(-8px) scale(1.06)}}

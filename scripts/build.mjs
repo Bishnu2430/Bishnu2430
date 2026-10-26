@@ -7,6 +7,7 @@ import {
   certCard,
   certHeight,
   currently,
+  currentlyText,
   experienceSvg,
   footerSvg,
   journeySvg,
@@ -33,8 +34,9 @@ const buttons = [
 ];
 for (const b of buttons) out.push(write(`assets/button-${b.id}.svg`, button(b)));
 
+const numberWords = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
 const heads = {
-  work: { eyebrow: "Selected work", title: "Seven systems, each with a write-up of what worked and what didn't" },
+  work: { eyebrow: "Selected work", title: `${numberWords[projects.length] ?? projects.length} systems, each with a write-up of what worked and what didn't` },
   journey: { eyebrow: "Journey so far", title: "Every layer trained on the one before it" },
   trail: { eyebrow: "Experience, research and recognition", title: "The paper trail" },
   activity: { eyebrow: "GitHub activity", title: "The commits behind the case studies" },
@@ -43,8 +45,15 @@ for (const [id, h] of Object.entries(heads)) both(`head-${id}`, (t) => sectionHe
 
 both("currently", currently);
 
+// Large cards go two to a row and medium cards three, as on the portfolio's grid.
 // Cards in a row share one body height so they line up side by side.
-const rows = [projects.slice(0, 2), projects.slice(2, 4), projects.slice(4, 7)];
+const perRow = { large: 2, medium: 3 };
+const rows = [];
+for (const p of projects) {
+  const last = rows.at(-1);
+  if (last && last[0].size === p.size && last.length < perRow[p.size]) last.push(p);
+  else rows.push([p]);
+}
 for (const row of rows) {
   for (const t of Object.values(themes)) {
     const h = Math.max(...row.map((p) => workCard(t, p).bodyH));
@@ -89,21 +98,13 @@ ${buttonRow}
 
 <br>
 
-${pic("currently", "Currently: I'm finishing my B.Tech at GIET and building Q-CONSENSUS, where five AI agents debate, a QAOA optimizer picks the consensus, and every step is anchored on a blockchain. This summer I was a generative AI intern at CTTC, Ministry of MSME.")}
+${pic("currently", `Currently: ${currentlyText}`)}
 
 <br><br>
 
 ${link(`${SITE}/#work`, pic("head-work", `${heads.work.eyebrow}: ${heads.work.title}`))}
 
-<p>
-${cardRow(rows[0], "49.8%")}
-</p>
-<p>
-${cardRow(rows[1], "49.8%")}
-</p>
-<p>
-${cardRow(rows[2], "33.2%")}
-</p>
+${rows.map((row) => `<p>\n${cardRow(row, row[0].size === "large" ? "49.8%" : "33.2%")}\n</p>`).join("\n")}
 <p>
 ${tiles.map((tl) => link(tl.href, pic(`tile-${tl.id}`, `${tl.title}: ${tl.sub}`, 'width="33.2%"'))).join("")}
 </p>
@@ -113,7 +114,7 @@ ${tiles.map((tl) => link(tl.href, pic(`tile-${tl.id}`, `${tl.title}: ${tl.sub}`,
 ${link(`${SITE}/#journey`, pic("head-journey", `${heads.journey.eyebrow}: ${heads.journey.title}`))}
 
 <details>
-<summary><b>From a hardware paper to multi-agent systems in three years</b> · show all ${milestones} milestones</summary>
+<summary><b>From a hardware paper to multi-agent systems and a physics engine in three years</b> · show all ${milestones} milestones</summary>
 <br>
 
 ${pic("journey", "Timeline of milestones from 2024 to 2027")}
@@ -136,7 +137,7 @@ ${certifications.map((c) => link(c.href, pic(`cert-${c.id}`, `${c.name}, ${c.iss
 
 <br>
 
-${pic("toolbox", "How I work: explainable models, local LLMs, quantum judged against classical, verifiable records, hardware in the loop, and shipping with Docker")}
+${pic("toolbox", "How I work: explainable models, local LLMs, LLMs that never get the last word, quantum judged against classical, physics you can check, verifiable records, hardware in the loop, and shipping with Docker")}
 
 <br><br>
 

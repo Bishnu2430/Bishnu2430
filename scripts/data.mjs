@@ -25,6 +25,29 @@ export const education = {
 
 export const projects = [
   {
+    slug: "nabz",
+    title: "Nabz",
+    hook: "Photograph a lab report and get every result explained in English, Hindi or Odia, by an AI that never gets the last word on safety.",
+    year: "2026",
+    categories: ["GenAI", "AI/ML", "Systems"],
+    context: "B.Tech major project, GIET · Team of four",
+    size: "large",
+    visual: "lab",
+    github: "https://github.com/Bishnu2430/Nabz",
+  },
+  {
+    slug: "worldline",
+    title: "Worldline",
+    hook: "Drop a black hole into the real solar system and watch general relativity play out, with every physics model checked against the real universe.",
+    year: "2026",
+    categories: ["Systems"],
+    context: "Personal project",
+    status: "In active development",
+    size: "large",
+    visual: "orbit",
+    github: "https://github.com/Bishnu2430/Worldline",
+  },
+  {
     slug: "q-consensus",
     title: "Q-CONSENSUS",
     hook: "Five AI agents debate, a quantum optimizer picks the consensus, and a blockchain keeps the receipts.",
@@ -158,7 +181,7 @@ export const toolbox = [
     job: "Models that explain themselves",
     story: "A simple baseline first, a bigger model only if it earns its cost, and a reason next to every prediction.",
     tools: ["scikit-learn", "PyTorch", "Transformers", "SHAP"],
-    usedIn: ["Misinformation Vaccine", "Floodwatch"],
+    usedIn: ["Misinformation Vaccine", "Floodwatch", "Nabz"],
   },
   {
     job: "LLMs that run where the data is",
@@ -167,10 +190,22 @@ export const toolbox = [
     usedIn: ["Q-CONSENSUS", "Floodwatch", "CTTC internship"],
   },
   {
+    job: "LLMs that never get the last word",
+    story: "De-identified input, a strict output schema, rule checks and a second model as judge, with a safe fallback whenever any of them fails.",
+    tools: ["gpt-oss-120b", "pgvector RAG", "Rule validators", "LLM-as-judge"],
+    usedIn: ["Nabz", "CycleSense"],
+  },
+  {
     job: "Quantum, judged against classical",
     story: "Every quantum step ships with a classical baseline, so the comparison is on the page, not assumed.",
     tools: ["Qiskit", "Qiskit Aer", "QAOA", "Quantum kernels"],
     usedIn: ["Q-CONSENSUS", "QuantumLab"],
+  },
+  {
+    job: "Physics you can check",
+    story: "Every model ships with a test against theory or observation, and the app always says which model is running.",
+    tools: ["Rust", "wgpu", "IAS15", "SPH"],
+    usedIn: ["Worldline"],
   },
   {
     job: "Records nobody can quietly edit",
@@ -206,13 +241,15 @@ export const journey = [
     { date: "Nov 2025", kind: "award", title: "CycleSense takes 3rd at ReFlow", detail: "ReFlow Menstrual Health Innovation Hackathon, IIT Bhubaneswar: an IoT and LLM health platform." },
     { date: "Dec 2025", kind: "work", title: "Data Science Trainee & Intern", detail: "Jyesta Corporate Entity × E-Cell IIT Roorkee. Recommendation and loan-prediction systems with model explainability." },
   ] },
-  { year: "2026", note: "Agents, explainability and quantum", milestones: [
+  { year: "2026", note: "Agents, safe AI, quantum and physics", milestones: [
     { date: "Feb 2026", kind: "award", title: "Floodwatch wins Model Fiesta", detail: "1st place at Suravi 2K26: Arduino sensors, a random forest with SHAP, and a local LLM that explains flood risk." },
     { date: "Feb 2026", kind: "build", title: "Started Q-CONSENSUS", detail: "Multi-agent debate with quantum-optimized consensus and blockchain provenance." },
     { date: "Jan 2026", kind: "paper", title: "Entropy-optimized thresholding for retinal vessel segmentation", detail: "Presented at the SPARK-2K26 Research Conclave, GIET Bhubaneswar." },
     { date: "Jun 2026", kind: "work", title: "Generative AI Trainee", detail: "CTTC, Ministry of MSME. LLMs, RAG, LangChain and Hugging Face, with an end-to-end capstone." },
     { date: "Jul 2026", kind: "learn", title: "Completed Boot.dev backend engineering", detail: "Finished the full track after twelve months." },
     { date: "Aug 2026", kind: "build", title: "QuantumLab for Smart India Hackathon 2026", detail: "With Team Creative Cartel: an interactive quantum lab backed by real Qiskit Aer simulations." },
+    { date: "Oct 2026", kind: "build", title: "Shipped Nabz, my B.Tech major project", detail: "Lab reports read, checked and explained in English, Hindi and Odia, with the AI never trusted with safety." },
+    { date: "Oct 2026", kind: "build", title: "Started Worldline", detail: "A relativistic universe sandbox in Rust, with every physics model tested against observation." },
   ] },
   { year: "2027", note: "Next layer", milestones: [
     { date: "Aug 2027", kind: "learn", title: "Graduating B.Tech CSE", detail: "GIET Bhubaneswar, currently at 8.8 CGPA." },
