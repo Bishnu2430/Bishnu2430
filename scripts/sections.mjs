@@ -51,25 +51,26 @@ export function button({ label, iconName, primary = false }) {
 }
 
 /* ---------- Currently ---------- */
+// Tokens: plain words, or inline tags with a small mono mark like the portfolio's .tag.
+const tag = (mark, label, tone) => ({ tag: true, mark, label, tone });
+const words = (s) => s.split(" ").map((w) => ({ word: w }));
+const currentlyTokens = [
+  ...words("I'm finishing my B.Tech at"),
+  tag("G", "GIET", "plain"),
+  ...words("and building"),
+  tag("W", "Worldline", "navy"),
+  ...words(", a relativistic universe sandbox in Rust where every physics model is tested against the real universe. I've just shipped"),
+  tag("N", "Nabz", "amber"),
+  ...words(", which explains lab reports in three languages without letting the AI have the last word on safety."),
+];
+export const currentlyText = currentlyTokens.map((tk) => (tk.tag ? ` ${tk.label}` : /^[,.]/.test(tk.word) ? tk.word : ` ${tk.word}`)).join("").trim();
+
 export function currently(t) {
   const size = 29;
   const lh = 46;
   const maxW = 930;
   const tagFont = 22;
-  // Tokens: plain words, or inline tags with a small mono mark like the portfolio's .tag.
-  const tag = (mark, label, tone) => ({ tag: true, mark, label, tone });
-  const words = (s) => s.split(" ").map((w) => ({ word: w }));
-  const tokens = [
-    ...words("I'm finishing my B.Tech at"),
-    tag("G", "GIET", "plain"),
-    ...words("and building"),
-    tag("Q", "Q-CONSENSUS", "navy"),
-    ...words(", where five AI agents debate, a"),
-    tag("⟩", "QAOA", "amber"),
-    ...words("optimizer picks the consensus, and every step is anchored on a blockchain. This summer I was a generative AI intern at"),
-    tag("M", "CTTC, Ministry of MSME", "plain"),
-    { word: "." },
-  ];
+  const tokens = currentlyTokens;
   // Words are set as whole runs (natural spacing); only tag positions depend on measured widths,
   // which err wide, so a tag can gain a hair of space but never overlap the text before it.
   const measure = (s) => textWidth(s, size, "sans", 600) * 0.975;
@@ -139,13 +140,26 @@ export function currently(t) {
 
   const facts = [
     { icon: "cap", label: "Education", value: `B.Tech CSE · ${education.cgpa} CGPA` },
-    { icon: "spark", label: "Focus", value: "ML · LLM agents · Explainability" },
-    { icon: "layers", label: "Exploring", value: "Quantum ML · QAOA" },
+    { icon: "spark", label: "Focus", value: "ML · LLM systems · Explainability" },
+    { icon: "layers", label: "Exploring", value: "Physics simulation · Quantum ML" },
     { icon: "map-pin", label: "Based in", value: profile.location },
   ];
   const fy = statementBottom + 30;
-  const fh = 112;
   const cw = FULL / 4;
+  // Values that would run into the next cell wrap at a "·" onto a second line, and the strip grows to fit.
+  const fits = (s) => textWidth(s, 15.5, "sans", 600) <= 236;
+  const values = facts.map(({ value }) => {
+    if (fits(value)) return [value];
+    const parts = value.split(" · ");
+    const out = [];
+    for (const part of parts) {
+      const last = out.at(-1);
+      if (last !== undefined && fits(`${last} · ${part}`)) out[out.length - 1] = `${last} · ${part}`;
+      else out.push(part);
+    }
+    return out.map((l, k) => (k < out.length - 1 ? `${l} ·` : l));
+  });
+  const fh = 112 + (Math.max(...values.map((v) => v.length)) - 1) * 21;
   let strip =
     `<clipPath id="facts"><rect x="0" y="${fy}" width="${FULL}" height="${fh}" rx="10"/></clipPath>` +
     `<g clip-path="url(#facts)"><rect x="0" y="${fy}" width="${FULL}" height="${fh}" fill="${t.line}"/>`;
@@ -156,7 +170,7 @@ export function currently(t) {
       `<rect x="${cx + (i ? 0.5 : 1)}" y="${fy + 1}" width="${cw - (i ? 1 : 1.5)}" height="${fh - 2}" fill="url(#grain)"/>` +
       icon(f.icon, cx + 22, fy + 20, 18, t.textMuted) +
       eyebrow(t, f.label, cx + 22, fy + 62, { size: 11 }) +
-      sans(f.value, cx + 22, fy + 88, 15.5, t.text, 600);
+      lines(values[i], cx + 22, fy + 88, 21, 15.5, t.text, 600);
   });
   strip += `</g><rect x=".5" y="${fy + 0.5}" width="${FULL - 1}" height="${fh - 1}" rx="10" fill="none" stroke="${t.line}"/>`;
 
@@ -164,7 +178,7 @@ export function currently(t) {
   return svgDoc({
     w: FULL,
     h,
-    title: "Currently: finishing a B.Tech at GIET and building Q-CONSENSUS; generative AI intern at CTTC, Ministry of MSME this summer",
+    title: "Currently: finishing a B.Tech at GIET, building Worldline and just shipped Nabz",
     defs: grainDefs("grain", t),
     body: eyebrow(t, "Currently", 0, 18) + out + strip,
   });

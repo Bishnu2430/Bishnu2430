@@ -11,12 +11,15 @@
 
 <br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/currently-dark.svg"><img src="assets/currently-light.svg" alt="Currently: I'm finishing my B.Tech at GIET and building Q-CONSENSUS, where five AI agents debate, a QAOA optimizer picks the consensus, and every step is anchored on a blockchain. This summer I was a generative AI intern at CTTC, Ministry of MSME." width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/currently-dark.svg"><img src="assets/currently-light.svg" alt="Currently: I'm finishing my B.Tech at GIET and building Worldline, a relativistic universe sandbox in Rust where every physics model is tested against the real universe. I've just shipped Nabz, which explains lab reports in three languages without letting the AI have the last word on safety." width="100%"></picture>
 
 <br><br>
 
-<a href="https://bishnuprasadkar.vercel.app/#work"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/head-work-dark.svg"><img src="assets/head-work-light.svg" alt="Selected work: Seven systems, each with a write-up of what worked and what didn't" width="100%"></picture></a>
+<a href="https://bishnuprasadkar.vercel.app/#work"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/head-work-dark.svg"><img src="assets/head-work-light.svg" alt="Selected work: Nine systems, each with a write-up of what worked and what didn't" width="100%"></picture></a>
 
+<p>
+<a href="https://bishnuprasadkar.vercel.app/work/nabz"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-nabz-dark.svg"><img src="assets/work-nabz-light.svg" alt="Nabz: Photograph a lab report and get every result explained in English, Hindi or Odia, by an AI that never gets the last word on safety." width="49.8%"></picture></a><a href="https://bishnuprasadkar.vercel.app/work/worldline"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-worldline-dark.svg"><img src="assets/work-worldline-light.svg" alt="Worldline: Drop a black hole into the real solar system and watch general relativity play out, with every physics model checked against the real universe." width="49.8%"></picture></a>
+</p>
 <p>
 <a href="https://bishnuprasadkar.vercel.app/work/q-consensus"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-q-consensus-dark.svg"><img src="assets/work-q-consensus-light.svg" alt="Q-CONSENSUS: Five AI agents debate, a quantum optimizer picks the consensus, and a blockchain keeps the receipts." width="49.8%"></picture></a><a href="https://bishnuprasadkar.vercel.app/work/quantumlab"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-quantumlab-dark.svg"><img src="assets/work-quantumlab-light.svg" alt="QuantumLab: Poke a qubit and watch it answer: an interactive quantum lab where every number comes from a real Qiskit simulation." width="49.8%"></picture></a>
 </p>
@@ -35,7 +38,7 @@
 <a href="https://bishnuprasadkar.vercel.app/#journey"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/head-journey-dark.svg"><img src="assets/head-journey-light.svg" alt="Journey so far: Every layer trained on the one before it" width="100%"></picture></a>
 
 <details>
-<summary><b>From a hardware paper to multi-agent systems in three years</b> · show all 15 milestones</summary>
+<summary><b>From a hardware paper to multi-agent systems and a physics engine in three years</b> · show all 17 milestones</summary>
 <br>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg"><img src="assets/journey-light.svg" alt="Timeline of milestones from 2024 to 2027" width="100%"></picture>
@@ -58,7 +61,7 @@
 
 <br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/toolbox-dark.svg"><img src="assets/toolbox-light.svg" alt="How I work: explainable models, local LLMs, quantum judged against classical, verifiable records, hardware in the loop, and shipping with Docker" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/toolbox-dark.svg"><img src="assets/toolbox-light.svg" alt="How I work: explainable models, local LLMs, LLMs that never get the last word, quantum judged against classical, physics you can check, verifiable records, hardware in the loop, and shipping with Docker" width="100%"></picture>
 
 <br><br>
 
